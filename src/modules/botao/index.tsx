@@ -1,8 +1,9 @@
- export default function Botao(){
+ import styles from "./botao.module.scss"
+ 
+ export default function Botao(props:{texto:string}){
     return(
-        <button>
-            Botão
+        <button className={styles.botao}>
+            {props.texto}
         </button>
-
     );
  }

@@ -1,11 +1,12 @@
 import Botao from "../botao";
+import styles from  "./formulario.module.scss"
 
 export default function Formulario(){
     return(
-        <form>
-            <div>
+        <form className={styles.novaTarefa}>
+            <div className={styles.inputContainer}>
                 <label htmlFor="tarefa">
-                    Adcionar um novo estudo
+                    Adicionar um novo estudo
                 </label>
                 <input type="text"
                         name="tarefa"
@@ -13,7 +14,7 @@ export default function Formulario(){
                         placeholder="O que você quer estudar"
                         required />
             </div>
-            <div>
+            <div className={styles.inputContainer}>
                 <label htmlFor="tempo">
                     Tempo
                 </label>
@@ -26,7 +27,7 @@ export default function Formulario(){
                         required/>
             </div>
             <div>
-                <Botao />
+                <Botao texto={'Adicionar'} />
             </div>
 
         </form>
