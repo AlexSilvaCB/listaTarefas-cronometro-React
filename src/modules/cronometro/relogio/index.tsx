@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./relogio.module.scss"
 
 interface Props{
